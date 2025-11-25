@@ -1,0 +1,85 @@
+# ~/.config/yazi/theme.toml
+# Translated from NixOS configuration, based on artgreendream.lua
+
+
+
+# Colors from artgreendream.lua
+# bg        = "NONE"      # transparent background
+# fg        = "#66FF99"   # main text (green)
+# lavender  = "#C4A0FF"   # keywords
+# cyan      = "#88ddff"   # functions / methods / operators
+# yellow    = "#FFD966"   # classes / types / warnings
+# blue      = "#3399FF"   # numbers / booleans
+# pink      = "#FF66CC"   # strings
+# turquoise = "#009999"   # visual selection
+# red       = "#FF3355"   # errors
+# gray      = "#3D6655"   # comments
+# darkgray  = "#0D3322"   # cursor, line highlight
+
+# Mapping to Yazi theme elements
+[ui]
+bg = "none" # Transparent background
+fg = "#66FF99" # Main text
+
+[status]
+bg = "#111111"
+fg = "#66FF99"
+
+[selected]
+fg = "#000000"
+bg = "#009999" # Turquoise
+
+[hovered]
+fg = "#000000"
+bg = "#FFD966" # Yellow
+
+[current]
+bg = "#0D3322" # Darkgray
+
+[highlight]
+fg = "#000000"
+bg = "#FFD966" # Yellow
+
+[error]
+fg = "#FF3355" # Red
+
+[warn]
+fg = "#FFD966" # Yellow
+
+[info]
+fg = "#C4A0FF" # Lavender
+
+[hint]
+fg = "#88ddff" # Cyan
+
+[comment]
+fg = "#3D6655" # Gray
+
+[keyword]
+fg = "#C4A0FF" # Lavender
+
+[function]
+fg = "#88ddff" # Cyan
+
+[string]
+fg = "#FF66CC" # Pink
+
+[number]
+fg = "#3399FF" # Blue
+
+[boolean]
+fg = "#3399FF" # Blue
+
+[variable]
+fg = "#66FF99" # Main text
+
+[type]
+fg = "#FFD966" # Yellow
+
+[operator]
+fg = "#88ddff" # Cyan
+
+[diff]
+plus = "#00FF88"
+minus = "#FF3355"
+delta = "#88ddff"
