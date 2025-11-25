@@ -1,0 +1,45 @@
+[user]
+  name = ART-Laus
+  email = yzen26431@gmail.com
+
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = vim
+
+[color]
+  ui = auto
+
+# Новая цветовая схема, гармонирующая с вашим терминалом
+[color "branch"]
+  current = "#FF007C" # Ярко-розовый
+  local = "#FFD500"   # Желтый
+  remote = "#00FF9F"  # Ярко-зеленый
+
+[color "diff"]
+  meta = "#00BFFF"    # Голубой
+  frag = "#B400FF"    # Пурпурный
+  old = "#FF007C"     # Ярко-розовый для удаленного
+  new = "#00FF9F"     # Ярко-зеленый для добавленного
+
+[color "status"]
+  added = "#00FF9F"     # Добавлено в индекс -> зеленый
+  changed = "#FFD500"    # Изменено, но не в индексе -> желтый
+  untracked = "#00BFFF"  # Неотслеживаемые файлы -> голубой
+
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --all --graph --decorate --oneline -n30
+  type = cat-file -t
+  dump = cat-file -p
+
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+
+[diff "sav"]
+  textconv = hexdump -v -C
+  binary = true
